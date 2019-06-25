@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "TableViewCell.h"
+#import "DetailViewController.h"
 
 @interface TableViewController ()
 
@@ -27,10 +28,16 @@
     
     // 리소스의 딕셔너리를 가져온다.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
     // 해당 딕셔너리를 뮤터블 배열과 연결시킨다.
     dataSelect = dict[@"Places"];
     
-}
+    // setBackBarButtonItem 함수
+    // 뒤로가기 버튼을 설정한다.
+    [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]];
+    
+    
+} // (void)viewDidLoad
 
 #pragma mark - Table view data source
 
@@ -53,10 +60,10 @@
     // Configure the cell...
     NSDictionary *dict = dataSelect[indexPath.row];
     
+    // 딕셔너리에 있던 속성들에 값을 넣어 화면에 보여준다.
     cell.cellTitle.text = dict[@"Title"];
     cell.cellAddress.text = dict[@"Address"];
     cell.cellImage.image = [UIImage imageNamed:dict[@"Image"]];
-    
     
     return cell;
 }
@@ -96,14 +103,33 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
+// 뷰가 네비게이트 될때
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    // 네비게이션 segue 의 identifier 가 showDetail 이면
+    if ([[segue identifier] isEqualToString:@"showDetail"]){
+        
+        // 디테일 뷰 컨트롤러를 가져온다.
+        DetailViewController *detailView = [segue destinationViewController];
+        
+        // 테이블 뷰에서 선택된 인덱스 경로를 가져온다.
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+        
+        // 테이블 뷰에서 선택된 인덱스에 해당하는 딕셔너리를 가져온다.
+        NSDictionary *dict = dataSelect[myIndexPath.row];
+        
+        // 디테일뷰에 선언된 배열에 테이블 뷰에서 선택된 요소를 넣는다.
+        detailView.detailModel = @[dict[@"Title"]];
+        
+    }
+    
 }
-*/
+
 
 @end

@@ -17,6 +17,8 @@
 		6A92046F22C1F2EE00BC5524 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92046E22C1F2EE00BC5524 /* TableViewCell.m */; };
 		6A92047222C1F30100BC5524 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92047122C1F30100BC5524 /* TableViewController.m */; };
 		6A92047422C1F56900BC5524 /* LandMarks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A92047322C1F56900BC5524 /* LandMarks.plist */; };
+		6AB04DC022C20E6600972FD8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB04DBF22C20E6600972FD8 /* DetailViewController.m */; };
+		6AB04DC322C20F3C00972FD8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB04DC222C20F3C00972FD8 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		6A92047022C1F30100BC5524 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		6A92047122C1F30100BC5524 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		6A92047322C1F56900BC5524 /* LandMarks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LandMarks.plist; sourceTree = "<group>"; };
+		6AB04DBE22C20E6600972FD8 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6AB04DBF22C20E6600972FD8 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6AB04DC222C20F3C00972FD8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB04DC322C20F3C00972FD8 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +96,7 @@
 				6A92045322C1ED5000BC5524 /* KoreaLandMarksAppTests */,
 				6A92045E22C1ED5000BC5524 /* KoreaLandMarksAppUITests */,
 				6A92043922C1ED4F00BC5524 /* Products */,
+				6AB04DC122C20F3C00972FD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,8 @@
 				6A92047122C1F30100BC5524 /* TableViewController.m */,
 				6A92046D22C1F2EE00BC5524 /* TableViewCell.h */,
 				6A92046E22C1F2EE00BC5524 /* TableViewCell.m */,
+				6AB04DBE22C20E6600972FD8 /* DetailViewController.h */,
+				6AB04DBF22C20E6600972FD8 /* DetailViewController.m */,
 				6A92044122C1ED4F00BC5524 /* Main.storyboard */,
 				6A92044422C1ED5000BC5524 /* Assets.xcassets */,
 				6A92044622C1ED5000BC5524 /* LaunchScreen.storyboard */,
@@ -138,6 +147,14 @@
 				6A92046122C1ED5000BC5524 /* Info.plist */,
 			);
 			path = KoreaLandMarksAppUITests;
+			sourceTree = "<group>";
+		};
+		6AB04DC122C20F3C00972FD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB04DC222C20F3C00972FD8 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB04DC022C20E6600972FD8 /* DetailViewController.m in Sources */,
 				6A92044B22C1ED5000BC5524 /* main.m in Sources */,
 				6A92046F22C1F2EE00BC5524 /* TableViewCell.m in Sources */,
 				6A92043D22C1ED4F00BC5524 /* AppDelegate.m in Sources */,
