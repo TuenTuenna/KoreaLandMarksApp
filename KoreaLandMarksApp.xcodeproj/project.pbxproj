@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6A92043D22C1ED4F00BC5524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92043C22C1ED4F00BC5524 /* AppDelegate.m */; };
-		6A92044022C1ED4F00BC5524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92043F22C1ED4F00BC5524 /* ViewController.m */; };
 		6A92044322C1ED4F00BC5524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A92044122C1ED4F00BC5524 /* Main.storyboard */; };
 		6A92044522C1ED5000BC5524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A92044422C1ED5000BC5524 /* Assets.xcassets */; };
 		6A92044822C1ED5000BC5524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A92044622C1ED5000BC5524 /* LaunchScreen.storyboard */; };
 		6A92044B22C1ED5000BC5524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92044A22C1ED5000BC5524 /* main.m */; };
 		6A92045522C1ED5000BC5524 /* KoreaLandMarksAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92045422C1ED5000BC5524 /* KoreaLandMarksAppTests.m */; };
 		6A92046022C1ED5000BC5524 /* KoreaLandMarksAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92045F22C1ED5000BC5524 /* KoreaLandMarksAppUITests.m */; };
+		6A92046F22C1F2EE00BC5524 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92046E22C1F2EE00BC5524 /* TableViewCell.m */; };
+		6A92047222C1F30100BC5524 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92047122C1F30100BC5524 /* TableViewController.m */; };
+		6A92047422C1F56900BC5524 /* LandMarks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A92047322C1F56900BC5524 /* LandMarks.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		6A92043822C1ED4F00BC5524 /* KoreaLandMarksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreaLandMarksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A92043B22C1ED4F00BC5524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A92043C22C1ED4F00BC5524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A92043E22C1ED4F00BC5524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6A92043F22C1ED4F00BC5524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6A92044222C1ED4F00BC5524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A92044422C1ED5000BC5524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A92044722C1ED5000BC5524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,11 @@
 		6A92045B22C1ED5000BC5524 /* KoreaLandMarksAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoreaLandMarksAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A92045F22C1ED5000BC5524 /* KoreaLandMarksAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KoreaLandMarksAppUITests.m; sourceTree = "<group>"; };
 		6A92046122C1ED5000BC5524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A92046D22C1F2EE00BC5524 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		6A92046E22C1F2EE00BC5524 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		6A92047022C1F30100BC5524 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		6A92047122C1F30100BC5524 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		6A92047322C1F56900BC5524 /* LandMarks.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LandMarks.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +108,16 @@
 			children = (
 				6A92043B22C1ED4F00BC5524 /* AppDelegate.h */,
 				6A92043C22C1ED4F00BC5524 /* AppDelegate.m */,
-				6A92043E22C1ED4F00BC5524 /* ViewController.h */,
-				6A92043F22C1ED4F00BC5524 /* ViewController.m */,
+				6A92047022C1F30100BC5524 /* TableViewController.h */,
+				6A92047122C1F30100BC5524 /* TableViewController.m */,
+				6A92046D22C1F2EE00BC5524 /* TableViewCell.h */,
+				6A92046E22C1F2EE00BC5524 /* TableViewCell.m */,
 				6A92044122C1ED4F00BC5524 /* Main.storyboard */,
 				6A92044422C1ED5000BC5524 /* Assets.xcassets */,
 				6A92044622C1ED5000BC5524 /* LaunchScreen.storyboard */,
 				6A92044922C1ED5000BC5524 /* Info.plist */,
 				6A92044A22C1ED5000BC5524 /* main.m */,
+				6A92047322C1F56900BC5524 /* LandMarks.plist */,
 			);
 			path = KoreaLandMarksApp;
 			sourceTree = "<group>";
@@ -237,6 +245,7 @@
 			files = (
 				6A92044822C1ED5000BC5524 /* LaunchScreen.storyboard in Resources */,
 				6A92044522C1ED5000BC5524 /* Assets.xcassets in Resources */,
+				6A92047422C1F56900BC5524 /* LandMarks.plist in Resources */,
 				6A92044322C1ED4F00BC5524 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A92044022C1ED4F00BC5524 /* ViewController.m in Sources */,
 				6A92044B22C1ED5000BC5524 /* main.m in Sources */,
+				6A92046F22C1F2EE00BC5524 /* TableViewCell.m in Sources */,
 				6A92043D22C1ED4F00BC5524 /* AppDelegate.m in Sources */,
+				6A92047222C1F30100BC5524 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Places</key>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>경복궁</string>
+			<key>Address</key>
+			<string>서울특별시 종로구 세종로 사직로 161</string>
+			<key>Image</key>
+			<string>kyungBokGoong</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>N서울타워</string>
+			<key>Address</key>
+			<string>서울특별시 용산구 용산2가동 남산공원길 105</string>
+			<key>Image</key>
+			<string>namsanTower</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>명동</string>
+			<key>Address</key>
+			<string>서울특별시 중구</string>
+			<key>Image</key>
+			<string>myeongDong</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>북촌 한옥마을</string>
+			<key>Address</key>
+			<string>서울특별시 종로구 가회동 계동길 37</string>
+			<key>Image</key>
+			<string>bookChon</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>창덕궁</string>
+			<key>Address</key>
+			<string>서울특별시 종로구 와룡동 율곡로 99</string>
+			<key>Image</key>
+			<string>changDuckGoong</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>인사동</string>
+			<key>Address</key>
+			<string>서울특별시 종로구 법정동</string>
+			<key>Image</key>
+			<string>insadong</string>
+		</dict>
+	</array>
+</dict>
+</plist>
