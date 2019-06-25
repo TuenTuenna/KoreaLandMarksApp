@@ -125,7 +125,7 @@
         NSDictionary *dict = dataSelect[myIndexPath.row];
         
         // 디테일뷰에 선언된 배열에 테이블 뷰에서 선택된 요소를 넣는다.
-        detailView.detailModel = @[dict[@"Title"]];
+        detailView.detailModel = @[dict[@"Title"], dict[@"Address"], dict[@"Image"], dict[@"Description"], dict[@"Latitude"], dict[@"Longitude"]];
         
     }
     

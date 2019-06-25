@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A50631E22C2728900F099AA /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A50631D22C2728900F099AA /* MapPin.m */; };
 		6A92043D22C1ED4F00BC5524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A92043C22C1ED4F00BC5524 /* AppDelegate.m */; };
 		6A92044322C1ED4F00BC5524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A92044122C1ED4F00BC5524 /* Main.storyboard */; };
 		6A92044522C1ED5000BC5524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A92044422C1ED5000BC5524 /* Assets.xcassets */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A50631C22C2728900F099AA /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		6A50631D22C2728900F099AA /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 		6A92043822C1ED4F00BC5524 /* KoreaLandMarksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreaLandMarksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A92043B22C1ED4F00BC5524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A92043C22C1ED4F00BC5524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				6A92044922C1ED5000BC5524 /* Info.plist */,
 				6A92044A22C1ED5000BC5524 /* main.m */,
 				6A92047322C1F56900BC5524 /* LandMarks.plist */,
+				6A50631C22C2728900F099AA /* MapPin.h */,
+				6A50631D22C2728900F099AA /* MapPin.m */,
 			);
 			path = KoreaLandMarksApp;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A50631E22C2728900F099AA /* MapPin.m in Sources */,
 				6AB04DC022C20E6600972FD8 /* DetailViewController.m in Sources */,
 				6A92044B22C1ED5000BC5524 /* main.m in Sources */,
 				6A92046F22C1F2EE00BC5524 /* TableViewCell.m in Sources */,
@@ -466,6 +472,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67XDG42679;
 				INFOPLIST_FILE = KoreaLandMarksApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67XDG42679;
 				INFOPLIST_FILE = KoreaLandMarksApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
