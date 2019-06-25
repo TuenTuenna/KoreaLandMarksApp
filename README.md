@@ -6,4 +6,5 @@ Shows landmarks in Republic of Korea
 used frameworks
 - MapKit
 
-![koreaLandMark](https://user-images.githubusercontent.com/35421421/60083304-736a7a00-9770-11e9-967f-07399489ffe8.gif)
+![한국의명소](https://user-images.githubusercontent.com/35421421/60115225-71281000-97b0-11e9-8d68-11e7f8ca2374.gif)
+
